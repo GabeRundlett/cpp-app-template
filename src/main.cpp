@@ -1,7 +1,13 @@
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
 
+#include <my_lib/my_lib.hpp>
+
 auto main() -> int {
+    // Testing the use of a custom library
+    my_lib::func();
+
+    // Creating an "app" with SDL2
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_Window *window = SDL_CreateWindow("SDL2Test", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_RESIZABLE);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);

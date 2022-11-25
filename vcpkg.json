@@ -1,7 +1,8 @@
 {
-    "name": "my-app",
-    "version": "0.1.0",
-    "dependencies": [
-        "sdl2"
-    ]
+  "name": "my-app",
+  "version": "0.1.0",
+  "dependencies": [
+    "sdl2",
+    "my-lib"
+  ]
 }
