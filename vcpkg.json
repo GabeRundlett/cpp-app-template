@@ -6,16 +6,8 @@
   ],
   "builtin-baseline": "877e3dc2323a4d4c3c75e7168c22a0c4e921d4db",
   "vcpkg-configuration": {
-    "registries": [
-      {
-        "kind": "git",
-        "baseline": "8931c64791116592e5a47472c30c995e9244b5a0",
-        "repository": "https://github.com/GabeRundlett/vcpkg-registry",
-        "packages": [
-          "daxa",
-          "fsr2"
-        ]
-      }
+    "overlay-ports": [
+      "../Daxa/cmake/vcpkg-port"
     ]
   }
 }
